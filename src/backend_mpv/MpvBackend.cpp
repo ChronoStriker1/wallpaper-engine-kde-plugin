@@ -309,7 +309,7 @@ MpvObject::MpvObject(QQuickItem* parent)
 
     mpv_set_option_string(m_mpv, "config", "no");
     mpv_set_option_string(m_mpv, "hwdec", "vaapi");
-    mpv_set_option_string(m_mpv, "vo", "libmpv");
+    mpv_set_option_string(m_mpv, "vo", "gpu-next");
     mpv_set_option_string(m_mpv, "loop", "inf");
     mpv_set_option_string(m_mpv, "profile", "fast");    
 }
