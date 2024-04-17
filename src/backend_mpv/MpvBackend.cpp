@@ -308,7 +308,7 @@ MpvObject::MpvObject(QQuickItem* parent)
     if (mpv_initialize(m_mpv) < 0) _Q_DEBUG() << "could not initialize mpv context";
 
     mpv_set_option_string(m_mpv, "config", "no");
-    mpv_set_option_string(m_mpv, "hwdec", "auto");
+    mpv_set_option_string(m_mpv, "hwdec", "vaapi");
     mpv_set_option_string(m_mpv, "vo", "libmpv");
     mpv_set_option_string(m_mpv, "loop", "inf");
     mpv_set_option_string(m_mpv, "profile", "fast");    
